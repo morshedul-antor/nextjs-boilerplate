@@ -1,3 +1,8 @@
 {
-  "extends": "next/core-web-vitals"
+    "extends": "next/core-web-vitals",
+    "plugins": ["react", "unused-imports"],
+    "rules": {
+        "no-console": ["warn", { "allow": ["warn", "error"] }],
+        "no-unused-vars": "warn"
+    }
 }
